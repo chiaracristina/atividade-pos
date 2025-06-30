@@ -4,8 +4,8 @@
 name: Teste pipeline
 
 on:
-  release:
-    types: [main]
+  push:
+    branches: [main]
 
 jobs:
   build:
