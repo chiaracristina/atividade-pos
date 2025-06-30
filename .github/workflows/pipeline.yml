@@ -16,4 +16,4 @@ jobs:
         run: ls -la
 
       - name: Mensagem 
-        run: echo "Pipeline sucesso"
+        run: echo "Pipeline"
