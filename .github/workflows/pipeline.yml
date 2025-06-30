@@ -1,26 +1,19 @@
-name: CI - Pipeline N1
+name: Teste Simples
 
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
-  build-and-test:
+  exemplo:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout do código
         uses: actions/checkout@v4
 
-      - name: Configurar Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
+      - name: Mostrar arquivos
+        run: ls -la
 
-      - name: Instalar dependências
-        run: npm install
-
-      - name: Rodar testes
-        run: npm test
+      - name: Mensagem 
+        run: echo "Pipeline sucesso 
